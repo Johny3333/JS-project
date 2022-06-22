@@ -6,11 +6,11 @@ function calculateAge(){
     let totalMonth,totalDate,totalYear;
 
     let birthDate = inputDate.getDate();
-    let birthMonth = inputDate.getMonth();
+    let birthMonth = inputDate.getMonth()+1;
     let birthYear = inputDate.getFullYear();
 
     let currentYear = todayDate.getFullYear();
-    let currentMonth = todayDate.getMonth();
+    let currentMonth = todayDate.getMonth()+1;
     let currentDate = todayDate.getDate();
 
     leapChecker(currentYear);
